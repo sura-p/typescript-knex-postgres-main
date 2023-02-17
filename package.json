@@ -1,0 +1,38 @@
+{
+  "name": "knex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "start": "tsc --watch & nodemon dist/index.js",
+    "build": "tsc & node dist",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/cookie": "^12.0.0",
+    "@hapi/hapi": "^21.2.1",
+    "@hapi/jwt": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "good": "~7.0.1",
+    "good-console": "~6.1.2",
+    "good-squeeze": "~4.0.0",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "pg": "^8.9.0",
+    "ts-node-register": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.13.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
